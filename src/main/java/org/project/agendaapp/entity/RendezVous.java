@@ -2,10 +2,9 @@ package org.project.agendaapp.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.project.agendaapp.Enum.Statut;
+import org.project.agendaapp.Enum.StatutRendezVous;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
@@ -25,7 +24,7 @@ public class RendezVous {
     private LocalDateTime dateHeureFin;
 
     @Enumerated(EnumType.STRING)
-    private Statut statut;
+    private StatutRendezVous statutRendezVous;
 
     @ManyToOne
     @JoinColumn(name = "client_id")

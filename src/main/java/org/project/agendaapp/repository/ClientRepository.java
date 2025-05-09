@@ -1,21 +1,10 @@
 package org.project.agendaapp.repository;
-
-import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.time.format.DateTimeFormatter;
-
-@RestController
-@RequestMapping("/api/client")
-@RequiredArgsConstructor
-public class ClientRepository {
-
-    private final ClientRepository clientRepository;
-    private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+import org.project.agendaapp.entity.Client;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 
-    @GetMapping
+@Repository
+public interface ClientRepository extends JpaRepository<Client, Long> {
 
 }

@@ -20,6 +20,7 @@ public class Disponibilte {
     private DayOfWeek jourSemaine;
     private LocalTime heureDebut;
     private LocalTime heureFin;
+    private Long professionnelId;
 
     @ManyToOne
     private Professional professionnel;

@@ -24,6 +24,7 @@ public class DocumentJoint {
 
     private String nomFichier;
     private String url;
+    private String typeFichier;
 
     @ManyToOne
     private FicheClient fiche;

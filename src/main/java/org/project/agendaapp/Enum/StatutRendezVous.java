@@ -1,6 +1,6 @@
 package org.project.agendaapp.Enum;
 
-public enum Statut {
+public enum StatutRendezVous {
     EN_ATTENTE,
     CONFIRME,
     ANNULE,

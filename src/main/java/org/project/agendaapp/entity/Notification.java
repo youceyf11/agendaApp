@@ -20,6 +20,7 @@ public class Notification {
     private String message;
     private LocalDateTime dateEnvoi;
     private boolean lu;
+    private Long destinataireId;
 
     @ManyToOne
     private User destinataire;
